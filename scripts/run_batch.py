@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""Process every pool FASTA in a directory and aggregate results.
-
-Usage:
-  python scripts/run_batch.py --input data/ --config config.yaml
-
-Input files may be .fasta or .fasta.gz (mappy reads both). Pool names and a
-run key (date+site, for cross-contamination flagging) are parsed from the
-SecureBio filename convention YYMMDD-Site-NAS[-P#].respiratory.fasta[.gz].
-"""
 from __future__ import annotations
 import argparse
 import glob

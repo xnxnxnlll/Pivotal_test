@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-"""Build the alignment panel from per-virus FASTAs in references/raw/.
-
-fetch_references.sh downloads each manifest row into references/raw/<taxon>.fasta
-(a multi-FASTA for segmented/multi-strain viruses). This script groups every
-contig in a file under that file's <taxon>, so flu's 8 segments stay separate
-contigs (per-segment coverage) but share one taxon label (per-virus calls).
-
-Writes:
-  references/panel.fasta        contigs renamed <taxon>__<accession>
-  references/panel.lengths.tsv  contig_label  taxon  length
-"""
 from __future__ import annotations
 import glob, os, sys
 

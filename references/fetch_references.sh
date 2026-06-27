@@ -1,14 +1,3 @@
-#!/usr/bin/env bash
-# Batch-download the reference panel from NCBI, driven by manifest.tsv.
-#
-# Requires NCBI Datasets CLI + unzip:
-#   conda install -c conda-forge ncbi-datasets-cli unzip
-#
-# Each manifest row -> references/raw/<taxon>.fasta. Re-running is safe.
-# A failure on one row warns and continues (so a single bad accession version
-# doesn't abort the whole panel). After it finishes, run:
-#   python references/build_reference.py
-#
 set -uo pipefail   # NOTE: no -e, so one failed row doesn't kill the run
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 RAW="$HERE/raw"

@@ -1,16 +1,16 @@
-taxon	mode	query	notes
-SARS_CoV_2	accession	NC_045512.2	Wuhan-Hu-1, 29903 nt [verified]
-Influenza_A	accession	NC_026431.1 NC_026432.1 NC_026433.1 NC_026434.1 NC_026435.1 NC_026436.1 NC_026437.1 NC_026438.1	8 segments, A/California/07/2009 H1N1pdm [verified]; add an H3N2 ref for HA/NA typing
-Influenza_B	taxon	Influenza B virus	8 segments; pulled by taxon to avoid segment-accession errors
-Influenza_C	taxon	Influenza C virus	7 segments (single HEF gene, not HA+NA)
-RSV	accession	NC_038235.1 NC_001781.1	A=NC_038235, B=NC_001781 [verified]
-HMPV	accession	NC_039199.1	metapneumovirus [verified]; SH/G hypervariable -> add reps
-Parainfluenza	accession	NC_003461.1 NC_003443.1 NC_001796.2 NC_021928.1	PIV1 [verified] PIV2 [verify] PIV3 [verified] PIV4 [verify]
-Rhinovirus_A	taxon	rhinovirus A	160+ types; --refseq gives ONE prototype -> add reps
-Rhinovirus_B	taxon	rhinovirus B	--refseq prototype only
-Rhinovirus_C	accession	NC_009996.1	[verified]; or use mode=taxon "rhinovirus C"
-HCoV_229E	accession	NC_002645.1	lab-adapted RefSeq [verified]; clinical KY996417 annotates better
-HCoV_HKU1	accession	NC_006577.2	[verified]
-HCoV_NL63	accession	NC_005831.2	[verified]
-HCoV_OC43	accession	NC_006213.1	[verified]; diverse -> consider extra reps
+taxon	mode	query	
+SARS_CoV_2	accession	NC_045512.2
+Influenza_A	accession	NC_026431.1 NC_026432.1 NC_026433.1 NC_026434.1 NC_026435.1 NC_026436.1 NC_026437.1 NC_026438.1	
+Influenza_B	taxon	Influenza B virus	
+Influenza_C	taxon	Influenza C virus	
+RSV	accession	NC_038235.1 NC_001781.1
+HMPV	accession	NC_039199.1	
+Parainfluenza	accession	NC_003461.1 NC_003443.1 NC_001796.2 NC_021928.1	
+Rhinovirus_A	taxon	rhinovirus A	
+Rhinovirus_B	taxon	rhinovirus B	
+Rhinovirus_C	accession	NC_009996.1	
+HCoV_229E	accession	NC_002645.1	
+HCoV_HKU1	accession	NC_006577.2	
+HCoV_NL63	accession	NC_005831.2	
+HCoV_OC43	accession	NC_006213.1	
 

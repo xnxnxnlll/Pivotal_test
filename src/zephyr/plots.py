@@ -1,4 +1,3 @@
-"""Figures: per-virus coverage-along-genome and a viruses x pools heatmap."""
 from __future__ import annotations
 import os
 import numpy as np

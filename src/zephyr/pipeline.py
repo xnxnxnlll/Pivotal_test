@@ -1,4 +1,3 @@
-"""End-to-end processing for a single pool, and helpers to load the panel."""
 from __future__ import annotations
 import os
 import pandas as pd

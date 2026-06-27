@@ -1,10 +1,3 @@
-"""Align reads to the curated reference panel with mappy (minimap2, map-ont).
-
-mappy is minimap2's official Python binding: identical alignment engine and
-the same `map-ont` preset you'd get on the command line. We keep only the
-primary alignment per read and record the fields needed for confidence
-scoring (identity, mapq, query/ref spans) and for coverage (cigar).
-"""
 from __future__ import annotations
 
 from dataclasses import dataclass

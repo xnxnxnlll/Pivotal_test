@@ -1,12 +1,3 @@
-"""Discovery classification: kraken2 (+bracken) and sourmash gather.
-
-These two have different failure modes, so agreement between them (and with
-the minimap2 confirmation step) is itself a confidence signal. Both are
-invoked as subprocesses because neither has a maintained pip API; install
-them via conda/bioconda on your server (see environment.yml). Each wrapper
-degrades gracefully: if the tool or DB is missing it returns an empty result
-and the pipeline continues with alignment-only evidence.
-"""
 from __future__ import annotations
 
 import os

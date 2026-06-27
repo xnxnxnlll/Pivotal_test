@@ -1,12 +1,3 @@
-"""Per-reference coverage from alignment intervals.
-
-Coverage is computed by walking each primary alignment's CIGAR over the
-reference, marking only reference-consuming, base-present operations
-(M/=/X) as covered and skipping deletions/ref-skips (D/N). This matches
-`samtools depth` semantics (depth = number of reads with a base at a
-position) closely enough for ONT respiratory-virus work, and is exact and
-unit-testable without writing a BAM.
-"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field

@@ -1,19 +1,3 @@
-"""Turn raw signals into a defensible, tiered confidence call per (pool, taxon).
-
-This does NOT claim to be ground truth — it encodes transparent, tunable
-heuristics over five evidence axes so a reviewer can see exactly why a
-detection is HIGH/MEDIUM/LOW and re-weight if they disagree.
-
-Axes
-----
-1. read support        n aligned reads (vs pool yield)
-2. independent support n reads after collapsing near-duplicate fragments
-3. alignment quality   mean identity, mean mapq
-4. genome breadth      fraction of reference covered (>=1x) + evenness
-5. contamination flag  low-count detection co-occurring with a high-count
-                       detection of the SAME taxon in a co-sequenced run
-                       (date/site proxy) -> possible index hopping
-"""
 from __future__ import annotations
 import pandas as pd
 

@@ -1,9 +1,3 @@
-"""Lightweight FASTA QC (read counts, length distribution, N50).
-
-Pure-Python so it runs anywhere; for richer ONT QC you can additionally run
-NanoPlot on your server, but this is enough to characterise a pool and to
-decide whether a yield is high enough to expect genome-wide coverage.
-"""
 from __future__ import annotations
 from dataclasses import dataclass, asdict
 import numpy as np
