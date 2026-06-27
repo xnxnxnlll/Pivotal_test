@@ -16,3 +16,5 @@ python references/build_reference.py
 # 2. Run the batch
 python scripts/run_batch.py --input data/ --config config.yaml
 
+# 3. Embedding-based clustering
+track_b_embedding_clustering.ipynb
