@@ -1,0 +1,26 @@
+# zephyr-taxprofile configuration
+# Paths are relative to the repo root (or use absolute paths).
+
+out_dir: results
+
+# --- reference panel (built by references/build_reference.py) ---
+panel_fasta:   references/panel.fasta
+panel_lengths: references/panel.lengths.tsv
+
+# --- discovery databases (install tools via environment.yml) ---
+# Leave blank to skip a tool; the pipeline runs alignment-only if both are blank.
+kraken_db:    ""        # e.g. /data/db/k2_viral   (download a kraken2 viral DB) /Users/melon/Documents/k2_viral_20250714
+sourmash_db:  ""        # e.g. /data/db/viral.sbt.zip (a sourmash viral SBT/zip)
+
+# --- alignment / classification params ---
+threads: 4
+min_mapq: 0             # raise to e.g. 20 to keep only confident placements
+kraken_confidence: 0.10 # raised above default 0 for noisy long reads
+sourmash_k: 31
+sourmash_scaled: 1000
+
+# --- confidence thresholds (heuristics; see README) ---
+min_high_reads:   10    # reads needed (with breadth) for a HIGH call
+min_high_breadth: 0.10  # fraction of genome covered for a HIGH call
+min_identity:     0.85  # mean ONT alignment identity floor
+contam_ratio:     0.01  # flag if reads < 1% of same-taxon max in the same run

@@ -1,0 +1,11 @@
+# Python core — sufficient to run QC + alignment + coverage + confidence +
+# figures on already-downloaded FASTAs. mappy IS minimap2; pysam IS htslib.
+# Discovery (kraken2/sourmash) additionally needs the conda env.
+mappy>=2.28
+pysam>=0.22
+pandas>=1.5
+numpy>=1.23
+matplotlib>=3.6
+biopython>=1.81
+pyyaml>=6.0
+pytest>=7.0

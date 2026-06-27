@@ -1,0 +1,3 @@
+embedding	clusterer	ARI	AMI	homogeneity	completeness	n_clusters	noise
+k-mer(4)	KMeans	0.555	0.705	0.733	0.685	11	0
+k-mer(4)	HDBSCAN	0.28	0.597	0.595	0.609	11	824

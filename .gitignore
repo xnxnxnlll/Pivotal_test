@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+results/
+references/raw/*
+!references/raw/.gitkeep
+references/panel.fasta
+references/panel.fasta.*
+references/panel.lengths.tsv
+*.bam
+*.bai
+.ipynb_checkpoints/
